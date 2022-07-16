@@ -1,0 +1,541 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jul 16 14:05:17 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+GHCUP_INSTALL_BASE_PREFIX = C:\
+# environment
+LC_ALL = C
+# makefile (from 'makefile', line 21)
+DOC_REP = doc
+# environment
+USERPROFILE = C:\Users\oussa
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+LOCALAPPDATA = C:\Users\oussa\AppData\Local
+# environment
+VSCODE_CWD = C:\Users\oussa\AppData\Local\Programs\Microsoft VS Code
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 25
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27504_QQXEHODULOVZLLKY
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/ 
+,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\oussa\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\oussa\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\oussa\OneDrive
+# makefile
+CURDIR := c:/Users/oussa/Desktop/Home Folder/UQAM_�T�_2022/INF3135/TPs/TP3/SOFTWARE_MAINTENANCE
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST := makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 27504
+# environment
+CLION = C:\Program Files\JetBrains\CLion 2022.1.1\bin;
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\oussa\OneDrive
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\oussa
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-17.0.3.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\oussa\AppData\Local\Microsoft\WindowsApps;C:\Users\oussa\AppData\Local\Programs\Microsoft VS Code\bin;C:\ghcup\bin;C:\MinGW\bin;C:\Program Files\JetBrains\CLion 2022.1.1\bin;;C:\Program Files (x86)\Dr. Memory\bin\;C:\Program Files (x86)\Java\jre1.8.0_333\bin\java.exe;C:\Program Files\swipl\bin\;C:\Users\oussa\.dotnet\tools
+# environment
+COMPUTERNAME = LAPTOP-LMSNJ150
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# makefile (from 'makefile', line 22)
+ARCHIVE = tp3
+# environment
+PROMPT = $P$G
+# environment
+LOGONSERVER = \\LAPTOP-LMSNJ150
+# environment
+USERNAME = oussa
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = LAPTOP-LMSNJ150
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# makefile (from 'makefile', line 23)
+OBJETS = Couleurs.o FonctionLineaires.o FonctionNonLineaires.o Fractals.o Images.o Math2.o Pairs.o Palettes.o Points.o Sequences.o main.o
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# makefile
+.DEFAULT_GOAL := all
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-LMSNJ150
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+ASL.LOG = Destination=file
+# makefile (from 'makefile', line 20)
+BIN = flame
+# environment
+APPDATA = C:\Users\oussa\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\oussa\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\6ad3843b14b6076dc189030937bbaae7-1.69.1-main-sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+CABAL_DIR = C:\cabal
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = 5000
+# makefile (from 'makefile', line 19)
+CC = gcc
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
+# variable set hash-table stats:
+# Load=98/1024=10%, Rehash=0, Collisions=9/133=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key c:/Users/oussa/Desktop/Home Folder/UQAM_�T�_2022/INF3135/TPs/TP3/SOFTWARE_MAINTENANCE, mtime 1657994715): 45 files, no impossibilities.
+
+# 45 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Couleurs.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:18:31
+#  File has been updated.
+#  Successfully updated.
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 41):
+	$(CC) $(FLAGS) -c $<
+
+# Not a target:
+Fractals.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:23:06
+#  File has been updated.
+#  Successfully updated.
+
+Math2.o: Math2.c Math2.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Points.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:27:30
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+FonctionNonLineaires.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:20:58
+#  File has been updated.
+#  Successfully updated.
+
+Images.o: Images.c Images.h Points.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+Pairs.o: Pairs.c Pairs.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+Sequences.o: Sequences.c Sequences.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:10
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Palettes.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:26:04
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Points.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:27:03
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+FonctionLineaires.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:20:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Sequences.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:29:23
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Math2.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:25:10
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Pairs.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:25:41
+#  File has been updated.
+#  Successfully updated.
+
+Couleurs.o: Couleurs.c Couleurs.h Math2.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Fractals.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:22:18
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 74):
+	\rm -f $(BIN)
+	\rm -f *.o
+	\rm -f *~
+	\rm -f core
+	\rm -fr html
+	\rm -fr latex
+	\rm -f *.jpeg
+
+# Not a target:
+Sequences.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:28:31
+#  File has been updated.
+#  Successfully updated.
+
+FonctionLineaires.o: FonctionLineaires.c FonctionLineaires.h Points.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+archive: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 69):
+	\rm -f $(ARCHIVE).tar.gz
+	tar cvf $(ARCHIVE).tar *
+	gzip $(ARCHIVE).tar
+
+# Not a target:
+FonctionNonLineaires.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:21:43
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+FonctionLineaires.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:19:37
+#  File has been updated.
+#  Successfully updated.
+
+FonctionNonLineaires.o: FonctionNonLineaires.c FonctionNonLineaires.h Points.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: Couleurs.o FonctionLineaires.o FonctionNonLineaires.o Fractals.o Images.o Math2.o Pairs.o Palettes.o Points.o Sequences.o main.o
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := Couleurs.o
+# automatic
+# + := Couleurs.o FonctionLineaires.o FonctionNonLineaires.o Fractals.o Images.o Math2.o Pairs.o Palettes.o Points.o Sequences.o main.o
+# automatic
+# % := 
+# automatic
+# ^ := Couleurs.o FonctionLineaires.o FonctionNonLineaires.o Fractals.o Images.o Math2.o Pairs.o Palettes.o Points.o Sequences.o main.o
+# automatic
+# ? := Couleurs.o FonctionLineaires.o FonctionNonLineaires.o Fractals.o Images.o Math2.o Pairs.o Palettes.o Points.o Sequences.o main.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=7/15=47%
+#  recipe to execute (from 'makefile', line 38):
+	$(CC) $(FLAGS) $(OBJETS) -lm -o $(BIN)
+
+doc: Couleurs.h Couleurs.c FonctionLineaires.h FonctionLineaires.c FonctionNonLineaires.c FonctionNonLineaires.h Fractals.h Images.c Images.h Palettes.c Palettes.h Points.c Points.h Pairs.c Pairs.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 66):
+	doxygen
+
+# Not a target:
+Palettes.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:26:30
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:16:26
+#  File has been updated.
+#  Successfully updated.
+
+main.o: main.c Points.h FonctionNonLineaires.h FonctionLineaires.h Sequences.h Images.h Palettes.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+Points.o: Points.c Points.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Math2.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:25:01
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Images.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:23:58
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 19:15:53
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Pairs.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:03:07
+#  File has been updated.
+#  Successfully updated.
+
+Fractals.o: Fractals.c Fractals.h FonctionNonLineaires.h Images.h Palettes.h Sequences.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Images.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:24:39
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+Palettes.o: Palettes.c Palettes.h Couleurs.h Sequences.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 14:03:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Couleurs.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 16:19:12
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=40/1024=4%, Rehash=0, Collisions=6/128=5%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 53 / storage = 547 B / avg = 10 B
+# current buf: size = 8162 B / used = 547 B / count = 53 / avg = 10 B
+
+# strcache performance: lookups = 149 / hit rate = 64%
+# hash-table stats:
+# Load=53/8192=1%, Rehash=0, Collisions=0/149=0%
+# Finished Make data base on Sat Jul 16 14:05:17 2022
+
+ 

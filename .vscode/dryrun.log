@@ -1,0 +1,16 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/oussa/Desktop/Home Folder/UQAM_�T�_2022/INF3135/TPs/TP3/SOFTWARE_MAINTENANCE'
+gcc  -c Couleurs.c
+gcc  -c FonctionLineaires.c
+gcc  -c FonctionNonLineaires.c
+gcc  -c Fractals.c
+gcc  -c Images.c
+gcc  -c Math2.c
+gcc  -c Pairs.c
+gcc  -c Palettes.c
+gcc  -c Points.c
+gcc  -c Sequences.c
+gcc  -c main.c
+gcc  Couleurs.o FonctionLineaires.o FonctionNonLineaires.o Fractals.o Images.o Math2.o Pairs.o Palettes.o Points.o Sequences.o main.o -lm -o flame
+make: Leaving directory 'c:/Users/oussa/Desktop/Home Folder/UQAM_�T�_2022/INF3135/TPs/TP3/SOFTWARE_MAINTENANCE'
+ 
