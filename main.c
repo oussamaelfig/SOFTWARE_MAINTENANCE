@@ -131,7 +131,7 @@ Sequence *lireFichierIfs(char *a_nomFichier)
       FonctionLineaire *fonctionL = creerFonctionLineaire(a, b, c, d, e, f, couleur);
       assert(NULL != fonctionL);
 
-      FonctionNonLineaire *fonctionNL = chaineAFonction(nomFctNL);
+      FonctionNonLineaire *fonctionNL = chaineAFonctionNonLineaire(nomFctNL);
       assert(NULL != fonctionNL);
 
       int allocationReussi = 0;

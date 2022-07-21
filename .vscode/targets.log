@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul 16 14:05:17 2022
+# Make data base, printed on Thu Jul 21 10:08:52 2022
 
 # Variables
 
@@ -37,7 +37,7 @@ MAKE_COMMAND := make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27504_QQXEHODULOVZLLKY
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12180_EXQXRSWFDQWZVFWR
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -45,12 +45,11 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
-^D = $(patsubst %/ 
-,%,$(patsubst %\,%,$(dir $^)))
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\oussa\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+VSCODE_CODE_CACHE_PATH = C:\Users\oussa\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LANG = C
 # default
@@ -65,7 +64,8 @@ MAKEFLAGS = pqrR
 ONEDRIVE = C:\Users\oussa\OneDrive
 # makefile
 CURDIR := c:/Users/oussa/Desktop/Home Folder/UQAM_�T�_2022/INF3135/TPs/TP3/SOFTWARE_MAINTENANCE
-# environment
+# environment 
+
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
@@ -84,7 +84,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 27504
+VSCODE_PID = 12180
 # environment
 CLION = C:\Program Files\JetBrains\CLion 2022.1.1\bin;
 # automatic
@@ -153,8 +153,6 @@ GNUMAKEFLAGS :=
 OS = Windows_NT
 # makefile (from 'makefile', line 23)
 OBJETS = Couleurs.o FonctionLineaires.o FonctionNonLineaires.o Fractals.o Images.o Math2.o Pairs.o Palettes.o Points.o Sequences.o main.o
-# environment
-__COMPAT_LAYER = DetectorsAppHealth
 # makefile
 .DEFAULT_GOAL := all
 # default
@@ -186,7 +184,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\oussa\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\6ad3843b14b6076dc189030937bbaae7-1.69.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\6ad3843b14b6076dc189030937bbaae7-1.69.2-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -208,7 +206,7 @@ CC = gcc
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=9/133=7%
+# Load=97/1024=9%, Rehash=0, Collisions=9/132=7%
 
 # Pattern-specific Variable Values
 
@@ -216,9 +214,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/oussa/Desktop/Home Folder/UQAM_�T�_2022/INF3135/TPs/TP3/SOFTWARE_MAINTENANCE, mtime 1657994715): 45 files, no impossibilities.
+# . (key c:/Users/oussa/Desktop/Home Folder/UQAM_�T�_2022/INF3135/TPs/TP3/SOFTWARE_MAINTENANCE, mtime 1658412517): 36 files, no impossibilities.
 
-# 45 files, no impossibilities in 1 directories.
+# 36 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -229,7 +227,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD
 # Not a target:
 Couleurs.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:18:31
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
@@ -243,100 +241,100 @@ Couleurs.c:
 # Not a target:
 Fractals.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:23:06
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 Math2.o: Math2.c Math2.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Points.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:27:30
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 FonctionNonLineaires.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:20:58
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 Images.o: Images.c Images.h Points.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 Pairs.o: Pairs.c Pairs.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 Sequences.o: Sequences.c Sequences.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:10
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Palettes.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:26:04
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Points.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:27:03
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 FonctionLineaires.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:20:09
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Sequences.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:29:23
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Math2.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:25:10
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Pairs.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:25:41
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 Couleurs.o: Couleurs.c Couleurs.h Math2.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Fractals.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:22:18
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
@@ -356,13 +354,13 @@ clean:
 # Not a target:
 Sequences.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:28:31
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 FonctionLineaires.o: FonctionLineaires.c FonctionLineaires.h Points.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
@@ -378,20 +376,20 @@ archive: clean
 # Not a target:
 FonctionNonLineaires.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:21:43
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 FonctionLineaires.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:19:37
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 FonctionNonLineaires.o: FonctionNonLineaires.c FonctionNonLineaires.h Points.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
@@ -439,14 +437,14 @@ doc: Couleurs.h Couleurs.c FonctionLineaires.h FonctionLineaires.c FonctionNonLi
 # Not a target:
 Palettes.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:26:30
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 main.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:16:26
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
@@ -458,48 +456,48 @@ main.o: main.c Points.h FonctionNonLineaires.h FonctionLineaires.h Sequences.h I
 
 Points.o: Points.c Points.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Math2.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:25:01
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Images.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:23:58
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 19:15:53
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Pairs.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:03:07
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
 Fractals.o: Fractals.c Fractals.h FonctionNonLineaires.h Images.h Palettes.h Sequences.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Images.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:24:39
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
@@ -511,14 +509,14 @@ Images.h:
 
 Palettes.o: Palettes.c Palettes.h Couleurs.h Sequences.h
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 14:03:09
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Couleurs.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:19:12
+#  Last modified 2022-07-21 10:08:37
 #  File has been updated.
 #  Successfully updated.
 
@@ -530,12 +528,12 @@ Couleurs.h:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 53 / storage = 547 B / avg = 10 B
-# current buf: size = 8162 B / used = 547 B / count = 53 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 54 / storage = 558 B / avg = 10 B
+# current buf: size = 8162 B / used = 558 B / count = 54 / avg = 10 B
 
-# strcache performance: lookups = 149 / hit rate = 64%
+# strcache performance: lookups = 140 / hit rate = 61%
 # hash-table stats:
-# Load=53/8192=1%, Rehash=0, Collisions=0/149=0%
-# Finished Make data base on Sat Jul 16 14:05:17 2022
+# Load=54/8192=1%, Rehash=0, Collisions=0/140=0%
+# Finished Make data base on Thu Jul 21 10:08:52 2022
 
  

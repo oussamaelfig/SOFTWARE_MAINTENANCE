@@ -97,7 +97,7 @@ void initialiserEnumerationFonctionNonLineaire( void );
  * @pre
  *   a_nomFonction != NULL;
  */
-FonctionNonLineaire * chaineAFonction( char * a_nomFonction );
+FonctionNonLineaire * chaineAFonctionNonLineaire( char * a_nomFonction );
 
 
 /** 
