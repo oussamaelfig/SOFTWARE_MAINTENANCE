@@ -256,9 +256,15 @@ Point fnl_spiral(Point a_point) {
     double r = distanceOrigine(a_point);
     double theta = angle(a_point);
 
-    resultat = creerPoint((cos(theta) + sin(r)) / r,
-                          (sin(theta) - cos(r)) / r,
-                          &constructionReussit);
+    if(r==0){
+        resultat = creerPoint((cos(theta) + sin(r)) / 0.000001,
+                              (sin(theta) - cos(r)) / 0.000001,
+                              &constructionReussit);
+    }else {
+        resultat = creerPoint((cos(theta) + sin(r)) / r,
+                              (sin(theta) - cos(r)) / r,
+                              &constructionReussit);
+    }
     if (!constructionReussit) {
         fprintf(stderr, "FonctionNonLineaire : fnl_spiral : construction non reussit\n");
         exit(-1);
