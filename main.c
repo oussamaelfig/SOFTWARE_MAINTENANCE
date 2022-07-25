@@ -213,7 +213,6 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
 
   int position = 1;
   Arguments resultat = {0, 200, 200, 10000, 1.0, NULL, NULL, NULL};
-  int aOptionG = 0;
 
   while (position < a_argn)
   {
@@ -228,8 +227,12 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
       switch (a_argv[position - 1][1])
       {
       case 'g':
-        aOptionG = 1;
         resultat.aleatoire = 1;
+        if (a_argv[position] && extentionEstValide(".ifs", a_argv[position]))
+        {
+          fprintf(stderr, "main : lireArguments : l'option -g ne peut être utilise avec un fichier .ifs\n");
+          exit(-1);
+        }
         break;
       case 'x':
         resultat.tailleX = atoi(a_argv[position]);
@@ -330,9 +333,9 @@ Sequence *creerSequenceAleatoire(void)
   double a, b, c, d, e, f;
 
   char nomFctNL[50];
-  
+
   int couleur = 0;
-  
+
   int nbPrNomFctNL = 0;
 
   Sequence *seq = creer_Seq();
@@ -407,7 +410,7 @@ int main(int argn, char *argv[])
   Sequence *ifs;
   if (!args.aleatoire)
   {
-   ifs = lireFichierIfs(args.nomFichierIfs);
+    ifs = lireFichierIfs(args.nomFichierIfs);
   }
   else
   {
