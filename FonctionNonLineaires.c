@@ -41,8 +41,9 @@ FonctionNonLineaire *chaineAFonctionNonLineaire(char *a_nomFonction) {
     assert(NULL != a_nomFonction);
     FonctionNonLineaire *resultat = NULL;
 
-    for (int i = FNL_LINEAIRE; i <= FNL_ENUM_NOMBRE_VALEURS; i++) {
-        if (0 == strcmp(a_nomFonction, FNL[i]->nom) ){
+    for (int i = FNL_LINEAIRE; i < FNL_ENUM_NOMBRE_VALEURS; i++) {
+        if (0 == strcmp(a_nomFonction, FNL[i]->nom))
+        {
             resultat = FNL[i]->fonction;
         }
     }

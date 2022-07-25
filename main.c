@@ -220,7 +220,7 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
     if ('-' == a_argv[position][0])
     {
       position++;
-      if (a_argn == position)
+      if (a_argn == position && a_argv[position - 1][1] != 'g')
       {
         fprintf(stderr, "main : lireArguments : argument manquant.\n");
         exit(-1);
@@ -286,12 +286,14 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
     }
     else
     {
-      //Grosse modification
-      //Si l'option aleatoire est active, le fichier .ifs ne peut pas etre mentionne --> si on ne regarde pas l'extension d'un fichier.
-      if(resultat.aleatoire){
+      // Grosse modification
+      // Si l'option aleatoire est active, le fichier .ifs ne peut pas etre mentionne --> si on ne regarde pas l'extension d'un fichier.
+      if (resultat.aleatoire)
+      {
         fprintf(stderr, "main : lireArguments : l'option -g ne peut être utilise avec un fichier .ifs\n");
         exit(-1);
-      }else if (!extentionEstValide(".ifs", a_argv[position]))
+      }
+      else if (!extentionEstValide(".ifs", a_argv[position]))
       {
         fprintf(stderr, "main : lireArguments : le nom du fichier ifs doit se terminer par .ifs.\n");
         exit(-1);
@@ -300,7 +302,7 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
     }
     position++;
   }
-  //Si le fichier est null, et que l'option aleaotire est OFF, err sinon return resultat.
+  // Si le fichier est null, et que l'option aleaotire est OFF, err sinon return resultat.
   if (NULL == resultat.nomFichierIfs && !resultat.aleatoire)
   {
     fprintf(stderr, "main : lireArguments : le nom du fichier ifs n'est pas specifie.\n");
@@ -309,6 +311,80 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
 
   return resultat;
 }
+
+double trouverDoubleAleatoire()
+{
+  return (double)(rand() / RAND_MAX);
+}
+
+//**********************
+Sequence *creerSequenceAleatoire(void)
+{
+  int diff = 6;
+  int nbFonction = (int)(((double)(diff + 1) / RAND_MAX) * rand() + 2);
+  assert(nbFonction >= 2 && nbFonction <= 8);
+
+  int i = 0;
+  int j = 0;
+
+  double a, b, c, d, e, f;
+
+  char nomFctNL[50];
+  
+  int couleur = 0;
+  
+  int nbPrNomFctNL = 0;
+
+  Sequence *seq = creer_Seq();
+  assert(seq != NULL);
+
+  while (i <= 8)
+  {
+    a = trouverDoubleAleatoire();
+    assert(a <= 1.0 && a >= 0.0);
+    b = trouverDoubleAleatoire();
+    assert(b <= 1.0 && b >= 0.0);
+    c = trouverDoubleAleatoire();
+    assert(c <= 1.0 && c >= 0.0);
+    d = trouverDoubleAleatoire();
+    assert(d <= 1.0 && d >= 0.0);
+    e = trouverDoubleAleatoire();
+    assert(e <= 1.0 && e >= 0.0);
+    f = trouverDoubleAleatoire();
+    assert(f <= 1.0 && f >= 0.0);
+    couleur = (int)(((double)(255 + 1) / RAND_MAX) * rand());
+    assert(couleur >= 0 && couleur <= 255);
+
+    FonctionLineaire *fonctionL = creerFonctionLineaire(a, b, c, d, e, f, couleur);
+    assert(NULL != fonctionL);
+
+    nbPrNomFctNL = (int)(((double)(14) / RAND_MAX) * rand());
+    assert(nbPrNomFctNL < 14 && nbPrNomFctNL >= 0);
+
+    FonctionNonLineaire *fonctionNL = chaineAFonctionNonLineaire(FNL[nbPrNomFctNL]->nom);
+
+    assert(NULL != fonctionNL);
+
+    int allocationReussi = 0;
+    Pair fonctionComplete = creerPair(fonctionL, fonctionNL,
+                                      &allocationReussi);
+
+    if (!allocationReussi)
+    {
+      fprintf(stderr, "main : lireFichierIfs : erreur d'allocation.\n");
+      exit(-1);
+    }
+    assert(NULL != fonctionComplete);
+
+    ajouterEnQueue_Seq(seq, (Element)fonctionComplete);
+
+    ++i;
+  }
+
+  return seq;
+}
+
+//***********************
 
 /**
  * Le programme principal.
@@ -328,7 +404,15 @@ int main(int argn, char *argv[])
 
   Image *image = creerImage(args.tailleX, args.tailleY, 1, args.rayonFiltre);
 
-  Sequence *ifs = lireFichierIfs(args.nomFichierIfs);
+  Sequence *ifs;
+  if (!args.aleatoire)
+  {
+   ifs = lireFichierIfs(args.nomFichierIfs);
+  }
+  else
+  {
+    ifs = creerSequenceAleatoire();
+  }
 
   Palette *paletteCouleur = NULL;
   if (NULL != args.nomFichierPalette)
