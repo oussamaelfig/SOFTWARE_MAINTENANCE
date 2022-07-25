@@ -228,11 +228,13 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
       {
       case 'g':
         resultat.aleatoire = 1;
-        if (a_argv[position] && extentionEstValide(".ifs", a_argv[position]))
+        if ((a_argv[position] && extentionEstValide(".ifs", a_argv[position])) ||
+                                            resultat.nomFichierIfs != NULL)
         {
           fprintf(stderr, "main : lireArguments : l'option -g ne peut être utilise avec un fichier .ifs\n");
           exit(-1);
         }
+        --position;
         break;
       case 'x':
         resultat.tailleX = atoi(a_argv[position]);
@@ -317,7 +319,7 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
 
 double trouverDoubleAleatoire()
 {
-  return (double)(rand() / RAND_MAX);
+  return (double)rand() / (double)RAND_MAX;
 }
 
 //**********************
@@ -341,19 +343,25 @@ Sequence *creerSequenceAleatoire(void)
   Sequence *seq = creer_Seq();
   assert(seq != NULL);
 
-  while (i <= 8)
+  while (i <= nbFonction)
   {
     a = trouverDoubleAleatoire();
+    printf("%lf\n", a);
     assert(a <= 1.0 && a >= 0.0);
     b = trouverDoubleAleatoire();
+    printf("%lf\n", b);
     assert(b <= 1.0 && b >= 0.0);
     c = trouverDoubleAleatoire();
+    printf("%lf\n", c);
     assert(c <= 1.0 && c >= 0.0);
     d = trouverDoubleAleatoire();
+    printf("%lf\n", d);
     assert(d <= 1.0 && d >= 0.0);
     e = trouverDoubleAleatoire();
+    printf("%lf\n", e);
     assert(e <= 1.0 && e >= 0.0);
     f = trouverDoubleAleatoire();
+    printf("%lf\n", f);
     assert(f <= 1.0 && f >= 0.0);
     couleur = (int)(((double)(255 + 1) / RAND_MAX) * rand());
     assert(couleur >= 0 && couleur <= 255);
@@ -407,7 +415,7 @@ int main(int argn, char *argv[])
 
   Image *image = creerImage(args.tailleX, args.tailleY, 1, args.rayonFiltre);
 
-  Sequence *ifs;
+  Sequence *ifs = NULL;
   if (!args.aleatoire)
   {
     ifs = lireFichierIfs(args.nomFichierIfs);
