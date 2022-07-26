@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/resource.h>
+#include <time.h>
 
 #include "Fractals.h"
 #include "FonctionNonLineaires.h"
@@ -291,8 +292,6 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
     }
     else
     {
-      // Grosse modification
-      // Si l'option aleatoire est active, le fichier .ifs ne peut pas etre mentionne --> si on ne regarde pas l'extension d'un fichier.
       if (resultat.aleatoire)
       {
         fprintf(stderr, "main : lireArguments : l'option -g ne peut être utilise avec un fichier .ifs\n");
@@ -307,7 +306,7 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
     }
     position++;
   }
-  // Si le fichier est null, et que l'option aleaotire est OFF, err sinon return resultat.
+  
   if (NULL == resultat.nomFichierIfs && !resultat.aleatoire)
   {
     fprintf(stderr, "main : lireArguments : le nom du fichier ifs n'est pas specifie.\n");
@@ -322,9 +321,19 @@ double trouverDoubleAleatoire()
   return (double)rand() / (double)RAND_MAX;
 }
 
-//**********************
+/** Fonction qui vient créée une Séquence composé d'une paire de fonctions
+ * qui sont composées de valeurs aléatoires.
+ * @return
+ *   Une sequence contenant les differentes fonction lineaire lues.
+ * @param
+ *   void
+ * @pre
+ *   Aucune
+ */
 Sequence *creerSequenceAleatoire(void)
 {
+  srand(time(NULL));
+
   int diff = 6;
   int nbFonction = (int)(((double)(diff + 1) / RAND_MAX) * rand() + 2);
   assert(nbFonction >= 2 && nbFonction <= 8);
@@ -346,22 +355,16 @@ Sequence *creerSequenceAleatoire(void)
   while (i <= nbFonction)
   {
     a = trouverDoubleAleatoire();
-    printf("%lf\n", a);
     assert(a <= 1.0 && a >= 0.0);
     b = trouverDoubleAleatoire();
-    printf("%lf\n", b);
     assert(b <= 1.0 && b >= 0.0);
     c = trouverDoubleAleatoire();
-    printf("%lf\n", c);
     assert(c <= 1.0 && c >= 0.0);
     d = trouverDoubleAleatoire();
-    printf("%lf\n", d);
     assert(d <= 1.0 && d >= 0.0);
     e = trouverDoubleAleatoire();
-    printf("%lf\n", e);
     assert(e <= 1.0 && e >= 0.0);
     f = trouverDoubleAleatoire();
-    printf("%lf\n", f);
     assert(f <= 1.0 && f >= 0.0);
     couleur = (int)(((double)(255 + 1) / RAND_MAX) * rand());
     assert(couleur >= 0 && couleur <= 255);
