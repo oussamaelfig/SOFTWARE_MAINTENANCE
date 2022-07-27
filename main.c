@@ -306,7 +306,7 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
     }
     position++;
   }
-  
+
   if (NULL == resultat.nomFichierIfs && !resultat.aleatoire)
   {
     fprintf(stderr, "main : lireArguments : le nom du fichier ifs n'est pas specifie.\n");
@@ -397,8 +397,6 @@ Sequence *creerSequenceAleatoire(void)
 
   return seq;
 }
-
-//***********************
 
 /**
  * Le programme principal.
