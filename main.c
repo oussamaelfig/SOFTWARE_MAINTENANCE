@@ -316,15 +316,36 @@ Arguments validerEtLireArguments(int a_argn, char *a_argv[])
   return resultat;
 }
 
+/** Fonction qui retourne un double aleatoire entre 0.0 et 1.0 inclusivement.
+ * @return 
+ *   un double entre 0.0 et 1 choisie aleatoirement
+ * @param
+ *   void
+ * @pre
+ *   Aucune
+ */
 double trouverDoubleAleatoire()
 {
   return (double)rand() / (double)RAND_MAX;
 }
 
+/** Fonction qui retourne un double aleatoire entre entre 2 nombre avec le decalage et la difference
+ *  des deux nombre inclusivement.
+ * @return 
+ *   un int choisie aleatoirement entre deux bornes
+ * @param
+ *   void
+ * @pre
+ *   Aucune
+ */
+double trouverIntAleatoire(int difference, int decalage){
+  return (int)(((double)(difference + 1) / RAND_MAX) * rand() + decalage);
+}
+
 /** Fonction qui vient créée une Séquence composé d'une paire de fonctions
  * qui sont composées de valeurs aléatoires.
  * @return
- *   Une sequence contenant les differentes fonction lineaire lues.
+ *   Une sequence contenant les differentes fonctions lineaires creees aleatoirement.
  * @param
  *   void
  * @pre
@@ -334,8 +355,7 @@ Sequence *creerSequenceAleatoire(void)
 {
   srand(time(NULL));
 
-  int diff = 6;
-  int nbFonction = (int)(((double)(diff + 1) / RAND_MAX) * rand() + 2);
+  int nbFonction = trouverIntAleatoire(8 - 2, 2); 
   assert(nbFonction >= 2 && nbFonction <= 8);
 
   int i = 0;
@@ -366,13 +386,13 @@ Sequence *creerSequenceAleatoire(void)
     assert(e <= 1.0 && e >= 0.0);
     f = trouverDoubleAleatoire();
     assert(f <= 1.0 && f >= 0.0);
-    couleur = (int)(((double)(255 + 1) / RAND_MAX) * rand());
+    couleur = trouverIntAleatoire(255 - 0, 0); 
     assert(couleur >= 0 && couleur <= 255);
 
     FonctionLineaire *fonctionL = creerFonctionLineaire(a, b, c, d, e, f, couleur);
     assert(NULL != fonctionL);
 
-    nbPrNomFctNL = (int)(((double)(14) / RAND_MAX) * rand());
+    nbPrNomFctNL = trouverIntAleatoire(13 - 0, 0); 
     assert(nbPrNomFctNL < 14 && nbPrNomFctNL >= 0);
 
     FonctionNonLineaire *fonctionNL = chaineAFonctionNonLineaire(FNL[nbPrNomFctNL]->nom);
